@@ -1,8 +1,9 @@
 class Solution(object):
     def twoSum(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
+        for left in range(len(nums)):
+            for right in range(left+1,len(nums)):
+                if nums[left]+nums[right]==target:
+                    return [left,right]            
+        
+        
         
